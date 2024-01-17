@@ -4,7 +4,6 @@ package clubSimulation;
 import java.util.Random;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.ArrayList;
 
 /*
  This is the basic ClubGoer Thread class, representing the patrons at the club
@@ -25,7 +24,6 @@ public class Clubgoer extends Thread {
 	private AtomicBoolean served;
 	
 	private int ID; //thread ID 
-	//public static ArrayList<Object> thirstyPeople;
 
 	
 	Clubgoer( int ID,  PeopleLocation loc,  int speed) {
