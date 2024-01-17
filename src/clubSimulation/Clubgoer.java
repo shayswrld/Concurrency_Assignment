@@ -33,10 +33,9 @@ public class Clubgoer extends Thread {
 		movingSpeed=speed; //range of speeds for customers
 		this.myLocation = loc; //for easy lookups
 		inRoom=false; //not in room yet
-		thirsty = true; //thirsty when arrive
 		wantToLeave=false;	 //want to stay when arrive
 		rand=new Random();
-		//thirstyPeople = new ArrayList<>(thirstyPeople);
+		thirsty = rand.nextBoolean(); //thirsty when arrive
 	}
 	
 	//getter
